@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="index.js"></script>
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <img src="images/logo-qr-generator.svg" alt="logo" id="logo">
+
+    <div id="container-input">
+        <input type="url" name="url" id="url" placeholder="Enter an url">
+        <button onclick="getQrCode()" id="generator">QR code</button>
+    </div>
+
+    <div id="qrdisplay">
+        <div id="container-qr">
+            <div id="qrbg1"></div>
+            <div id="qrbg2"></div>
+            <div id="qrcode"></div>
+        </div>
+    
+        <div id="container-buttons">
+            <button onclick="downloadQr()" id="download">Download</button>
+            <button onclick="copyToClipboard()" id="share">Share</button>
+        </div>
+    </div>
+
+</body>
+</html>
